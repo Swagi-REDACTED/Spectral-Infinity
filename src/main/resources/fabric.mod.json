@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "spectral_infinity",
+	"version": "${version}",
+	"name": "Spectral Infinity",
+	"description": "Allows Infinity enchantment to work with all arrow types, with a configuration menu.",
+	"authors": [
+		"blupillcosby"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"icon": "icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.blupillcosby.spectralinfinity.SpectralInfinity"
+		],
+		"client": [
+			"net.blupillcosby.spectralinfinity.SpectralInfinityClient"
+		],
+		"modmenu": [
+			"net.blupillcosby.spectralinfinity.compat.ModMenuApiImpl"
+		]
+	},
+	"mixins": [
+		"spectral_infinity.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*",
+		"libgui": "*"
+	}
+}
